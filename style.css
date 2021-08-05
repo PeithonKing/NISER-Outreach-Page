@@ -412,50 +412,13 @@ progress{
 }
 
 /* Hamburger Menu */
-.hard{
-    width: 35px;
-    height: 30px;
-    background-color: rgb(255, 0, 43);
-    background-size: cover;
-    transition: 0.1s linear;
-    transform: translateY(0px) rotate(0deg);
-    opacity: "1";
-}
-
-.toggle-button {
-    display: none;
-
-    position: fixed;
-    top: 3rem;
-    right: 8.6rem;
-
-    width: 4rem;
-    height: 4rem;
-
-    padding: 2rem;
-
-    transition: .25s;
-    z-index: 15;
-}
-
-.toggle-button:hover {
-    cursor: pointer;
-}
-
-.toggle-button .menu-bar {
-    position: absolute;
-    border-radius: 2px;
-    width: 80%;
-    transition: .5s;
-}
-
 .menu-bar-top {
 	width: 35px;
     height: 4px;
-    border: 4px solid #000066;
+    background-color: #000066;
     border-bottom: none;
     top: 0;
-	transition: 0.1s linear;
+	transition: 0.15s linear;
 	transform: translateY(0px) rotate(0deg);
 }
 
@@ -466,7 +429,7 @@ progress{
     margin-top: 7px;
     margin-bottom: 7px;
     top: 4px;
-	transition: 0.1s linear;
+	transition: 0.15s linear;
 	opacity: 1;
 	transform: translateY(0px);
 	
@@ -475,82 +438,18 @@ progress{
 .menu-bar-bottom {
 	width: 35px;
     height: 4px;
-    border: 4px solid #000066;
+    background-color: #000066;
     border-top: none;
     top: 22px;
-	transition: 0.1s linear;
+	transition: 0.15s linear;
 	transform: translateY(0px) rotate(0deg);
 }
 
-
-
-.menu {
-    position: fixed;
-    right: 0;
-    top: 0;
-
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 10;
-}
-
-.menu--visible {
-    pointer-events: auto;
-}
-
-.app-menu {
-    position: fixed;
-    right: 0;
-    top: 0;
-
-    width: 22rem;
-    height: 100%;
-
-    background-color: var(--menu-sidebar-bg-col);
-
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
-
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    transform: translateX(100%);
-
-    will-change: transform;
-    z-index: 10;
-    pointer-events: auto; 
-}
-
-.menu--visible .app-menu {
-    -webkit-box-shadow: 0 0 6rem 0 rgba(241, 239, 209, 0.75);
-    -moz-box-shadow: 0 0 6rem 0 rgba(241, 239, 209, 0.75);
-    box-shadow: 0 0 6rem 0 rgba(241, 239, 209, 0.75);
-
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-}
-
-.menu--animatable .app-menu {
-    -webkit-transition: all 130ms ease-in;
-    -moz-transition: all 130ms ease-in;
-    -o-transition: all 130ms ease-in;
-    transition: all 130ms ease-in;
-}
-
-.menu--visible.menu--animatable  .app-menu {
-    -webkit-transition: all 230ms ease-out;
-    -moz-transition: all 230ms ease-out;
-    -o-transition: all 230ms ease-out;
-    transition: all 230ms ease-out;
+.toggle-button:hover {
+    cursor: pointer;
 }
 /* End of Hamburger Menu */
+
 .lead{
 	font-size:1.25rem;
 	font-weight:300

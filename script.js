@@ -6,21 +6,21 @@ function makeCross(){
   //console.log("opacity =", mid.style.opacity)
   //console.log("top transform =", top.style.transform)
 
-  if(top.style.transform == "translateY(11px) rotate(45deg)"){
+  if(top.style.transform == "translateY(11px) rotate(225deg)"){
       top.style.transform = "translateY(0px) rotate(0deg)";
-      top.style.border = "2px solid #000066";
+      top.style.backgroundColor = "#000066";
       mid.style.transform = "translateX(0px)";
       mid.style.opacity = "1";
       bot.style.transform = "translateY(0px) rotate(0deg)"
-      bot.style.border = "2px solid #000066";
+      bot.style.backgroundColor = "#000066";
   }
   else{
-      top.style.transform = "translateY(11px) rotate(45deg)";
-      top.style.border = "2px solid #ff0000";
-      mid.style.transform = "translateX(-100px)";
+      top.style.transform = "translateY(11px) rotate(225deg)";
+      top.style.backgroundColor = "#ff0000";
+      mid.style.transform = "translateX(-200px)";
       mid.style.opacity = "0";
-      bot.style.transform = "translateY(-11px) rotate(-45deg)"
-      bot.style.border = "2px solid #ff0000";
+      bot.style.transform = "translateY(-11px) rotate(-225deg)"
+      bot.style.backgroundColor = "#ff0000";
   }
 
 }

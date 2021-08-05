@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
+    <link href="styleCal.css" rel="stylesheet">
     <title>NISER | Outreach Page</title>
     <link rel=icon type=image/png sizes=32x32 href="niser_logo.png">
 </head>
@@ -15,7 +16,7 @@
             <nav class="navbar navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="https://www.niser.ac.in/">
-                        <img class="d-inline-block align-text-top" src="niser_logo.png" alt="" width="100" height="100">
+                        <img class="d-inline-block align-text-top" src="niser_logo.png" alt="" width="80" height="80">
                     </a>
                 </div>
             </nav>
@@ -158,38 +159,96 @@
             </div>
         </div>
     </div>
-    <div class="container" width=200>
-        <h3>About Us</h3>
-        <p>
-            Science outreach is all about communicating the importance and ideologies of Science with the
-            public. The general idea is to spread Science among the school students and teachers in a
-            captivating way which will be encouraging enough for them to think about a future in research or
-            education. NISER is mindful of its social responsibilities and has been reaching out to students
-            and teachers to motivate them in their Scientific pursuit.
-        </p>
+    <aside id="left_side">
+        <div class="infos">
+            <h3>About Us</h3>
+            <p style="text-align: justify">
+                Science outreach is all about communicating the importance and ideologies of Science with the
+                public. The general idea is to spread Science among the school students and teachers in a
+                captivating way which will be encouraging enough for them to think about a future in research or
+                education. NISER is mindful of its social responsibilities and has been reaching out to students
+                and teachers to motivate them in their Scientific pursuit.
+            </p>
 
-        <h3>Our vision</h3>
-        <p>
-            We believe that an exposure at the right time in one's career can ignite right minds in
-            learning and their scientific pursuit. With this in mind we invite teachers and students to have a
-            glimpse of the research environment at NISER and expose them to the concept of "Learning by
-            doing". NISER outreach activities provide a single window for facilities such as online and
-            offline education from school to undergraduate level, research programs, online portal for
-            various learning units for schools, online teachers' webinars, online and on-site teachers'
-            workshops etc.
-        </p>
-        <p>
-            NISER Open day program is introduced to invite people from various institutions/ schools can
-            to visit NISER in order to have a glimpse of the scientific exposure along with learning. NISER
-            Educational trips involve schools and college visits in different departments at NISER and
-            interact with the Scientific officers. NISER hosts the Odisha chapter of the Vigyan Pratibha
-            project in collaboration with Institute of Physics, Bhubaneswar and Homi Bhabha Centre for
-            Science Education (please check the full form), Mumbai and wherein teachers' training
-            workshops are being conducted.
-        </p>
-    </div>
-
+            <h3>Our vision</h3>
+            <p style="text-align: justify">
+                We believe that an exposure at the right time in one's career can ignite right minds in
+                learning and their scientific pursuit. With this in mind we invite teachers and students to have a
+                glimpse of the research environment at NISER and expose them to the concept of "Learning by
+                doing". NISER outreach activities provide a single window for facilities such as online and
+                offline education from school to undergraduate level, research programs, online portal for
+                various learning units for schools, online teachers' webinars, online and on-site teachers'
+                workshops etc.
+            </p>
+            <p style="text-align: justify">
+                NISER Open day program is introduced to invite people from various institutions/ schools can
+                to visit NISER in order to have a glimpse of the scientific exposure along with learning. NISER
+                Educational trips involve schools and college visits in different departments at NISER and
+                interact with the Scientific officers. NISER hosts the Odisha chapter of the Vigyan Pratibha
+                project in collaboration with Institute of Physics, Bhubaneswar and Homi Bhabha Centre for
+                Science Education (please check the full form), Mumbai and wherein teachers' training
+                workshops are being conducted.
+            </p>
+        </div>
+        <hr>
+        <h3>News and Announcements</h3>
+        <marquee direction="up" height="250px" scrollamount="5" onMouseOver="this.stop();" onMouseOut="this.start();">
+            <ul style="list-style-image:url('mic1.jpg')">
+                <li><span class="badge bg-primary" style="animation: blink 1s linear infinite;">New</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
+                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
+                    beatae ut.
+                </li><br>
+                <li><span class="badge bg-primary" style="animation: blink 1s linear infinite;">New</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
+                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
+                    beatae ut.
+                </li><br>
+                <li><span class="badge bg-danger">Old</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
+                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
+                    beatae ut.
+                </li><br>
+                <li><span class="badge bg-danger">Old</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
+                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
+                    beatae ut.
+                </li><br>
+            </ul>            
+        </marquee>
+        <hr>
+    </aside>
+    <aside id="right_side">
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="closeDetails()">&times;</div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="month">
+                <i class="prev"><</i>
+                        <div class="date">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <i class="next">></i>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </aside>
     <script src="script.js"></script>
+    <script src="scriptCal.js"></script>
 </body>
 
 </html>
