@@ -1,3 +1,27 @@
+/* VIOLET THEME */
+/*:root {
+  --head: rgb(192, 42, 192);
+  --body: rgb(226, 172, 226);
+  --today: rgb(192, 42, 192);
+  --days: rgb(214, 140, 214);
+}*/
+
+/* BLUE THEME *//*
+:root {
+  --head: rgb(42, 112, 192);
+  --body: rgb(220, 220, 220);
+  --today: rgb(90, 159, 238);
+  --days: rgb(190, 190, 190);
+}*/
+
+/* GREEN THEME */
+:root {
+  --head: rgb(19, 163, 0);
+  --body: rgb(160, 247, 157);
+  --today: rgb(72, 250, 66);
+  --days: rgb(96, 146, 94);
+}
+
 .month i {
   font-size: 3rem;
   cursor: pointer;
@@ -23,7 +47,7 @@
 }
 
 .today {
-  background-color: #FF9600;
+  background-color: var(--today);
   border-radius: 10px
 }
 
@@ -35,7 +59,7 @@
 }
 
 .days div:hover:not(.today) {
-  background-color: #FFC346;
+  background-color: var(--days);
   border: 0.2rem solid #FFF;
   cursor: pointer;
   border-radius: 10px
@@ -64,14 +88,14 @@
 .calendar {
   width: 100%;
   height: 660px;
-  background-color: #FFC346;
+  background-color: var(--body);
   border-radius: 25px
 }
 
 .month {
   width: 100%;
   height: 20%;
-  background-color: #FF9600;
+  background-color: var(--head);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,6 +1,6 @@
 #footer {
     float:left;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #13e70c 100%);
     width: 100%;
 }
 #footer .footer {
@@ -17,6 +17,14 @@
 	letter-spacing: .1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+#footer h3{
+	color: white;
+	text-align: center;
+}
+#footer h4{
+	color: white;
+	text-align: center;
 }
 #footer .social-icon {
 	display: flex;
@@ -55,9 +63,15 @@
 }
 
 #footer .mail:hover{
-	color: #dc4234;
+	color: rgb(179, 57, 57);
 }
 
 #footer .facebook:hover{
 	color: #3a559f;
+}
+
+#footer .insta:hover{
+	background-image: linear-gradient(45deg, #ffee00 0%, #ff00ea 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
