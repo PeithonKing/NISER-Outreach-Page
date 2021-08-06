@@ -412,42 +412,7 @@ progress{
 }
 
 /* Hamburger Menu */
-.menu-bar-top {
-	width: 35px;
-    height: 4px;
-    background-color: #000066;
-    border-bottom: none;
-    top: 0;
-	transition: 0.15s linear;
-	transform: translateY(0px) rotate(0deg);
-}
 
-.menu-bar-middle {
-	width: 35px;
-    height: 4px;
-    background-color: #000066;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    top: 4px;
-	transition: 0.15s linear;
-	opacity: 1;
-	transform: translateY(0px);
-	
-}
-
-.menu-bar-bottom {
-	width: 35px;
-    height: 4px;
-    background-color: #000066;
-    border-top: none;
-    top: 22px;
-	transition: 0.15s linear;
-	transform: translateY(0px) rotate(0deg);
-}
-
-.toggle-button:hover {
-    cursor: pointer;
-}
 /* End of Hamburger Menu */
 
 .lead{

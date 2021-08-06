@@ -1,0 +1,58 @@
+.gallery{
+    float: left;
+    width: 100%;
+}
+
+.gallery hr{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 88%;
+}
+
+.gallery h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery img{
+    margin-bottom: 10px;
+    width: 24.5%;
+    padding:1%;
+    /*background-color: red;*/
+    border-radius: 30px;
+}
+
+.gallery img:hover{
+    transform: scale(1.5);
+    transition: 0.25s;
+}
+
+.images{
+    /*background-color: blue;*/
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width:800px){
+    .gallery img{
+        width: 32.6%;
+        border-radius: 15px;
+    }
+    
+    .gallery img:hover{
+        transform: scale(1.35);
+    }
+        
+}
+
+@media (max-width:460px){
+    .gallery img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .gallery img:hover{
+        transform: scale(1.1);
+    }
+        
+}

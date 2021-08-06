@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link href="styleCal.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/styleCal.css" rel="stylesheet">
+    <link href="styles/styleGal.css" rel="stylesheet">
+    <link href="styles/styleHam.css" rel="stylesheet">
     <title>NISER | Outreach Page</title>
     <link rel=icon type=image/png sizes=32x32 href="niser_logo.png">
 </head>
@@ -160,6 +162,51 @@
         </div>
     </div>
     <aside id="left_side">
+        <hr>
+        <h3>News and Announcements</h3>
+        <marquee direction="up" height="250px" scrollamount="5" onMouseOver="this.stop();" onMouseOut="this.start();">
+            <ul style="list-style-image:url('mic1.jpg');">
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-primary"
+                            style="animation: blink 1s linear infinite;">New</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
+                        reprehenderit
+                        vel
+                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate
+                        sequi,
+                        beatae ut.</a>
+                </li><br>
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-primary"
+                            style="animation: blink 1s linear infinite;">New</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
+                        reprehenderit
+                        vel
+                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate
+                        sequi,
+                        beatae ut.</a>
+                </li><br>
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-danger">Old</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
+                        reprehenderit
+                        vel
+                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate
+                        sequi,
+                        beatae ut.</a>
+                </li><br>
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-danger">Old</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
+                        reprehenderit
+                        vel
+                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate
+                        sequi,
+                        beatae ut.</a>
+                </li><br>
+            </ul>
+        </marquee>
+        <hr>
         <div class="infos">
             <h3>About Us</h3>
             <p style="text-align: justify">
@@ -191,32 +238,6 @@
             </p>
         </div>
         <hr>
-        <h3>News and Announcements</h3>
-        <marquee direction="up" height="250px" scrollamount="5" onMouseOver="this.stop();" onMouseOut="this.start();">
-            <ul style="list-style-image:url('mic1.jpg')">
-                <li><span class="badge bg-primary" style="animation: blink 1s linear infinite;">New</span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
-                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
-                    beatae ut.
-                </li><br>
-                <li><span class="badge bg-primary" style="animation: blink 1s linear infinite;">New</span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
-                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
-                    beatae ut.
-                </li><br>
-                <li><span class="badge bg-danger">Old</span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
-                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
-                    beatae ut.
-                </li><br>
-                <li><span class="badge bg-danger">Old</span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit vel
-                    soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque voluptate sequi,
-                    beatae ut.
-                </li><br>
-            </ul>            
-        </marquee>
-        <hr>
     </aside>
     <aside id="right_side">
         <div class="popup" id="popup-1">
@@ -229,11 +250,11 @@
         <div class="calendar">
             <div class="month">
                 <i class="prev"><</i>
-                        <div class="date">
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                        <i class="next">></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="next">></i>
             </div>
             <div class="weekdays">
                 <div>Sun</div>
@@ -247,8 +268,23 @@
             <div class="days"></div>
         </div>
     </aside>
-    <script src="script.js"></script>
-    <script src="scriptCal.js"></script>
+    <div class="gallery"><hr width="90%">
+        <div class="galleryText"><h1>Gallery</h1></div>
+        <div class="images">
+            <a href="gallery/image1.jpg" target="_blank"><img src="gallery/image1.jpg"></a>
+            <a href="gallery/image2.jpg" target="_blank"><img src="gallery/image2.jpg"></a>
+            <a href="gallery/image3.jpg" target="_blank"><img src="gallery/image3.jpg"></a>
+            <a href="gallery/image4.jpg" target="_blank"><img src="gallery/image4.jpg"></a>
+        </div>
+        <div class="images" style="margin-bottom: 70px;">
+            <a href="#">
+                <button type="button" class="btn btn-primary" style="float:right">View All Images</button>
+            </a>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scriptCal.js"></script>
+    <script src="scripts/ham.js"></script>
 </body>
 
 </html>
