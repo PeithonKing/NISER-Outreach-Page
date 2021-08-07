@@ -5,27 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/styleCal.css" rel="stylesheet">
-    <link href="styles/styleGal.css" rel="stylesheet">
-    <link href="styles/styleHam.css" rel="stylesheet">
-    <link href="styles/styleFooter.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/51158303ea.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" href="niser_logo.png">
     <title>NISER | Outreach Page</title>
     <link rel=icon type=image/png sizes=32x32 href="niser_logo.png">
+    <meta name="description" content="Home page for NISER Outreach Community">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <nav class="navbar navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="https://www.niser.ac.in/">
-                        <img class="d-inline-block align-text-top" src="niser_logo.png" alt="" width="80" height="80">
+                    <a class="navbar-brand"  target="_blank" href="https://www.niser.ac.in/">
+                        <img id="topLogo" class="d-inline-block align-text-top" src="niser_logo.png" alt="">
                     </a>
                 </div>
             </nav>
             <a class="navbar-brand" href="#">
-                <h4>NISER | Outreach Page</h4>
+                <h1 style="font-size: 25px;">NISER | Outreach Page</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -65,6 +64,9 @@
             </div>
         </div>
     </nav>
+    <!-- End of NAVBAR -->
+
+    <!-- Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -117,6 +119,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- End of Carousel -->
+
+    <!-- Empty link Cards -->
     <div class="container my-4">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -163,52 +168,41 @@
             </div>
         </div>
     </div>
+    <!-- End of Empty link Cards -->
+
     <aside id="left_side">
+        <!-- News and announcements -->
         <hr>
         <h3>News and Announcements</h3>
         <marquee direction="up" height="250px" scrollamount="5" onMouseOver="this.stop();" onMouseOut="this.start();">
             <ul style="list-style-image:url('mic1.jpg');">
                 <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-primary"
                             style="animation: blink 1s linear infinite;">New</span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
-                        reprehenderit
-                        vel
-                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
-                        voluptate
-                        sequi,
-                        beatae ut.</a>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
                 </li><br>
                 <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-primary"
                             style="animation: blink 1s linear infinite;">New</span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
-                        reprehenderit
-                        vel
-                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
-                        voluptate
-                        sequi,
-                        beatae ut.</a>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
                 </li><br>
                 <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-danger">Old</span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
-                        reprehenderit
-                        vel
-                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
-                        voluptate
-                        sequi,
-                        beatae ut.</a>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
                 </li><br>
                 <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-danger">Old</span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis
-                        reprehenderit
-                        vel
-                        soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
-                        voluptate
-                        sequi,
-                        beatae ut.</a>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
                 </li><br>
             </ul>
         </marquee>
         <hr>
+
+        <!-- Basic Content -->
         <div class="infos">
             <h3>About Us</h3>
             <p style="text-align: justify">
@@ -241,6 +235,8 @@
         </div>
         <hr>
     </aside>
+
+    <!-- Calendar -->
     <aside id="right_side">
         <div class="popup" id="popup-1">
             <div class="overlay"></div>
@@ -270,6 +266,9 @@
             <div class="days"></div>
         </div>
     </aside>
+    <!-- End of Calendar -->
+
+    <!-- Gallery -->
     <div class="gallery">
         <div class="galleryText">
             <h1>Gallery</h1>
@@ -281,29 +280,30 @@
             <a href="gallery/image4.jpg" target="_blank"><img src="gallery/image4.jpg"></a>
         </div>
         <div class="images" style="margin-bottom: 70px;">
-            <a href="#">
+            <a href="#"  target="_blank">
                 <button type="button" class="btn btn-primary" style="float:right">View All Images</button>
             </a>
         </div>
     </div>
+    <!-- End of Gallery -->
 
     <!-- Footer -->
     <section id="footer">
         <div class="footer container">
             <h2>NISER Outreach Community</h2>
-                <a class="social git" href="#" title="Link to GitHub" target="_blank"><i class="fab fa-git-alt"></i></a>
-                <a class="social facebook" href="#" title="Link to our Facebook Page" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a class="social insta" href="#" title="Link to our Instagram Page" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="social mail" href="#" title="Mail Us" target="_blank"><i class="far fa-envelope"></i></a>
-            <h3>National Institute of Science Education and Reasearch</h3>
+            <a class="social git" href="#" title="Link to GitHub" target="_blank"><i class="fab fa-git-alt"></i></a>
+            <a class="social facebook" href="#" title="Link to our Facebook Page" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a class="social insta" href="#" title="Link to our Instagram Page" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="social mail" href="#" title="Mail Us" target="_blank"><i class="far fa-envelope"></i></a>
+            <h3>National Institute of Science Education and Research</h3>
             <h4>Bhubaneswar, India</h4>
         </div>
     </section>
     <!-- End Footer -->
 
     <script src="scripts/script.js"></script>
-    <script src="scripts/scriptCal.js"></script>
-    <script src="scripts/ham.js"></script>
 </body>
 
 </html>
