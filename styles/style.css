@@ -53,13 +53,13 @@ events on a particular date)*/
   --body: rgb(220, 220, 220);
   --today: rgb(90, 159, 238);
   --days: rgb(190, 190, 190);
-}*/
+}
 
 /* GREEN THEME */
 :root {
 	--head: rgb(19, 163, 0);
 	--body: rgb(160, 247, 157);
-	--today: rgb(72, 250, 66);
+	--today: rgb(19, 231, 12);
 	--days: rgb(96, 146, 94);
   }
   
@@ -521,7 +521,7 @@ events on a particular date)*/
 
 #footer {
     float:left;
-	background-image: linear-gradient(60deg, #29323c 0%, #13e70c 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, var(--today) 100%);
     width: 100%;
 }
 #footer .footer {
